@@ -26,9 +26,17 @@ import { LoginComponent } from './page/login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { routing } from './app.routes';
-import { MatButtonModule, MatRadioModule, MatInputModule, MatMenuModule, MatCheckboxModule } from '@angular/material';
-
-
+import {
+  MatButtonModule,
+  MatRadioModule,
+  MatInputModule,
+  MatMenuModule,
+  MatCheckboxModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatListModule,
+  MatIconModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -62,7 +70,11 @@ import { MatButtonModule, MatRadioModule, MatInputModule, MatMenuModule, MatChec
     MatRadioModule,
     MatInputModule,
     MatMenuModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]
