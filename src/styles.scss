@@ -30,3 +30,6 @@ $staff-competency-assessment-front-theme: mat-light-theme($staff-competency-asse
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
