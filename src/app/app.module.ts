@@ -17,6 +17,9 @@ import { PanelsComponent } from './component/panels/panels.component';
 import { SettingsService } from './services/settings.services';
 import { WizardComponent } from './component/wizard/wizard.component';
 import { HttpModule } from '@angular/http';
+import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
+import { NavbarComponent as Navbar } from './components/navbar/navbar.component';
+import { AssessmentCardComponent } from './components/assessment-card/assessment-card.component'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -35,7 +38,8 @@ import {
   MatToolbarModule,
   MatSidenavModule,
   MatListModule,
-  MatIconModule
+  MatIconModule,
+  MatCardModule
 } from '@angular/material';
 
 @NgModule({
@@ -57,7 +61,10 @@ import {
     FooterComponent,
     SettingsComponent,
     PanelsComponent,
-    WizardComponent
+    WizardComponent,
+    StaffhomeComponent,
+    AssessmentCardComponent,
+    Navbar
   ],
   imports: [
     BrowserModule,
@@ -74,6 +81,7 @@ import {
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule,
     MatIconModule
   ],
   providers: [SettingsService],

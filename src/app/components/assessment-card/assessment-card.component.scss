@@ -1,0 +1,28 @@
+@import "../../../styles.scss";
+
+mat-card {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.assessment-header {
+  width: 100%;
+  background-color: $primary-color;
+  color: White;
+  & > h4 {
+    margin: 0px;
+  }
+}
+
+.assessment-body, .assessment-header, .assessment-actions {
+  padding: 8px 16px;
+  & > p {
+    margin: 8px 0px;
+    padding: 0px;
+  }
+}
+
+.assessment-actions {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -143,8 +143,8 @@ html, body {
     }
   }
   
-  .background{
-    background: url("./assets/img/login_bg.jpg") no-repeat center center;
+  .background {
+    // background: url("./assets/img/login_bg.jpg") no-repeat center center;
     height: 100%;
     background-size: cover;
     filter: brightness(40%);
@@ -545,3 +545,16 @@ html, body {
     box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   }
   
+$primary-color: mat-color($staff-competency-assessment-front-primary);
+$accent-color: mat-color($staff-competency-assessment-front-accent);
+$warn-color: mat-color($staff-competency-assessment-front-warn);
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0px 26px;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
