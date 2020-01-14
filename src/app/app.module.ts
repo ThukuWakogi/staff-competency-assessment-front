@@ -10,13 +10,16 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatButtonModule } from '@angular/material/button'
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { AssessmentCardComponent } from './components/assessment-card/assessment-card.component'
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    StaffhomeComponent
+    StaffhomeComponent,
+    AssessmentCardComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon'
     MatListModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
