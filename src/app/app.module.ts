@@ -23,7 +23,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { CustomMaterialModule } from './material.module';
 import { LoginComponent } from './page/login/login.component';
-import { UserComponent } from './user/user.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { routing } from './app.routes';
@@ -50,8 +49,7 @@ import { MatButtonModule, MatRadioModule, MatInputModule, MatMenuModule, MatChec
     FooterComponent,
     SettingsComponent,
     PanelsComponent,
-    WizardComponent,
-    UserComponent
+    WizardComponent
   ],
   imports: [
     BrowserModule,
