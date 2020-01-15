@@ -13,9 +13,7 @@ import { LockComponent } from './page/lock/lock.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SettingsComponent } from './dashboard/setting/setting.component';
-import { PanelsComponent } from './component/panels/panels.component';
 import { SettingsService } from './services/settings.services';
-import { WizardComponent } from './component/wizard/wizard.component';
 import { HttpModule } from '@angular/http';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
 import { NavbarComponent as Navbar } from './components/navbar/navbar.component';
@@ -61,8 +59,6 @@ import {
     HeaderComponent,
     FooterComponent,
     SettingsComponent,
-    PanelsComponent,
-    WizardComponent,
     StaffhomeComponent,
     AssessmentCardComponent,
     Navbar

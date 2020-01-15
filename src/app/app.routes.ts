@@ -4,8 +4,6 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
 import { SweetalertComponent } from './dashboard/sweetalert/sweetalert.component';
 import { SettingsComponent } from './dashboard/setting/setting.component';
-import { PanelsComponent} from './component/panels/panels.component';
-import { WizardComponent } from './component/wizard/wizard.component';
 
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
@@ -19,9 +17,7 @@ const routes: Routes = [
     {path: 'profile', component: ProfileComponent},
     {path: 'notification', component: NotificationComponent},
     {path: 'alert', component: SweetalertComponent},
-    {path: 'settings', component: SettingsComponent},
-    {path: 'components/panels', component: PanelsComponent},
-    {path: 'components/wizard', component: WizardComponent}
+    {path: 'settings', component: SettingsComponent}
   ]}
 ];
 
