@@ -30,3 +30,17 @@ $staff-competency-assessment-front-theme: mat-light-theme($staff-competency-asse
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$primary-color: mat-color($staff-competency-assessment-front-primary);
+$accent-color: mat-color($staff-competency-assessment-front-accent);
+$warn-color: mat-color($staff-competency-assessment-front-warn);
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0px 26px;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
