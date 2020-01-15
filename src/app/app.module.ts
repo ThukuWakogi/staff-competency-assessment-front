@@ -29,6 +29,7 @@ import { LoginComponent } from './page/login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { routing } from './app.routes';
+import { FlexLayoutModule } from '@angular/flex-layout'
 import {
   MatButtonModule,
   MatRadioModule,
@@ -82,7 +83,8 @@ import {
     MatSidenavModule,
     MatListModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]
