@@ -7,9 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Input() title: string;
+  router: any;
   constructor() {}
 
   ngOnInit() {
+  }
+
+  public person(){
+    this.router.navigate(['./dashboard/profile']);
   }
 
   menuClick() {
