@@ -7,12 +7,11 @@ import { FigurecardComponent } from './shared/figurecard/figurecard.component';
 import { ImagecardComponent } from './shared/imagecard/imagecard.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
 import { MsgIconBtnComponent } from './shared/msgiconbtn/msgiconbtn.component';
-import { SweetalertComponent } from './dashboard/sweetalert/sweetalert.component';
+// import { SweetalertComponent } from './dashboard/sweetalert/sweetalert.component';
 import { RootComponent } from './dashboard/root/root.component';
-import { LockComponent } from './page/lock/lock.component';
+// import { LockComponent } from './page/lock/lock.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { SettingsComponent } from './dashboard/setting/setting.component';
 import { SettingsService } from './services/settings.services';
 // import { WizardComponent } from './component/wizard/wizard.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -54,12 +53,12 @@ import {
     ImagecardComponent,
     NotificationComponent,
     MsgIconBtnComponent,
-    SweetalertComponent,
+    // SweetalertComponent,
     RootComponent,
-    LockComponent,
+    // LockComponent,
     HeaderComponent,
     FooterComponent,
-    SettingsComponent,
+    // SettingsComponent,
     StaffhomeComponent,
     AssessmentCardComponent,
     Navbar
