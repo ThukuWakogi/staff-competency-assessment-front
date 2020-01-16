@@ -19,13 +19,17 @@ password: string;
   ngOnInit() {
   }
 
-  login() : void {
-    if(this.firstname == 'admin' && this.password == 'admin'){
-     this.router.navigate(["user"]);
-    }else {
-      alert("Invalid credentials");
-    }
-  }
+  // login() : void {
+  //   if(this.firstname == 'admin' && this.password == 'admin'){
+  //    this.router.navigate(["dashboard"]);
+  //   }else {
+  //     alert("Invalid credentials");
+  //   }
+  // }
+
+  public login(){
+    this.router.navigate(['./dashboard']);
+}
   
 
 }
