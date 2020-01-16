@@ -57,14 +57,4 @@ export class LoginComponent implements OnInit {
         error => {console.log({error})}
       )
   }
-
-  // login() : void {
-  //   if(this.firstname == 'admin' && this.password == 'admin'){
-  //    this.router.navigate(["user"]);
-  //   }else {
-  //     alert("Invalid credentials");
-  //   }
-  // }
-
-
 }
