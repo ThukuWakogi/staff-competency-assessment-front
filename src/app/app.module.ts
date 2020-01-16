@@ -14,7 +14,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SettingsComponent } from './dashboard/setting/setting.component';
 import { SettingsService } from './services/settings.services';
-import { HttpModule } from '@angular/http';
+// import { WizardComponent } from './component/wizard/wizard.component';
+import { HttpClientModule } from '@angular/common/http';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
 import { NavbarComponent as Navbar } from './components/navbar/navbar.component';
 import { AssessmentCardComponent } from './components/assessment-card/assessment-card.component'
@@ -68,7 +69,7 @@ import {
     BrowserAnimationsModule,
     CustomMaterialModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     routing,
     MatButtonModule,
     MatRadioModule,
