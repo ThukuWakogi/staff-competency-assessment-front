@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
 import { first } from 'rxjs/operators';
 import { Router, ActivatedRoute } from '@angular/router';
+import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -56,5 +57,14 @@ export class LoginComponent implements OnInit {
         error => {console.log({error})}
       )
   }
+
+  // login() : void {
+  //   if(this.firstname == 'admin' && this.password == 'admin'){
+  //    this.router.navigate(["user"]);
+  //   }else {
+  //     alert("Invalid credentials");
+  //   }
+  // }
+
 
 }
