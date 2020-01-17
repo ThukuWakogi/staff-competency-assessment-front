@@ -13,7 +13,7 @@ import { RootComponent } from './dashboard/root/root.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SettingsService } from './services/settings.services';
-// import { WizardComponent } from './component/wizard/wizard.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
 import { NavbarComponent as Navbar } from './components/navbar/navbar.component';
@@ -29,6 +29,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { TeamsComponent } from './dashboard/teams/teams.component';
 import { routing } from './app.routes';
 import { FlexLayoutModule } from '@angular/flex-layout'
+import { ReactiveFormsModule } from '@angular/forms'
 import {
   MatButtonModule,
   MatRadioModule,
@@ -82,7 +83,8 @@ import {
     MatListModule,
     MatCardModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]
