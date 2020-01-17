@@ -7,7 +7,7 @@ import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 // import { LockComponent } from './page/lock/lock.component';
-import {NgModule}  from '@angular/core';
+import {NgModule} from '@angular/core';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},

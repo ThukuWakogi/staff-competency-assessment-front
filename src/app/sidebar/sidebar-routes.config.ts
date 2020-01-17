@@ -8,6 +8,7 @@ export const ROUTES = [
     //     {path: 'components/wizard', title: 'Wizard', icon: 'W'},
     //   ]},
     { path: 'notification', title: 'Notification', icon: 'notifications', children: null },
+    { path: 'assessmentform', title: 'Assessment', icon: 'edit', children: null },
     // { path: 'alert', title: 'Sweet Alert', icon: 'warning', children: null },
     // { path: 'settings', title: 'Settings', icon: 'settings', children: null },
 ];
