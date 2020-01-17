@@ -1,0 +1,55 @@
+<div class="container">
+  <app-navbar title="Assessment Form"></app-navbar>
+  <form>
+    <mat-horizontal-stepper linear="false" labelPosition="bottom">
+      <mat-step>
+        <ng-template matStepLabel>
+          <span class="mat-wrap-label">Organisation</span>
+        </ng-template>
+        <app-organizationform></app-organizationform>
+        <div>
+          <button mat-raised-button matStepperNext type="button">Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>
+          <span class="mat-wrap-label">Innovation</span>
+        </ng-template>
+        step-2
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>
+          <span class="mat-wrap-label">Interpersonal Communication</span>
+        </ng-template>
+        step-3
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>
+          <span class="mat-wrap-label">Critical Thinking</span>
+        </ng-template>
+        step-4
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>
+          <span class="mat-wrap-label">Building and Managing Relationships</span>
+        </ng-template>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </form>
+</div>

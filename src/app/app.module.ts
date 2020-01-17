@@ -16,8 +16,7 @@ import { SettingsService } from './services/settings.services';
 
 import { HttpClientModule } from '@angular/common/http';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
-import { NavbarComponent as Navbar } from './components/navbar/navbar.component';
-import { AssessmentCardComponent } from './components/assessment-card/assessment-card.component'
+import { AssessmentCardComponent } from './component/assessment-card/assessment-card.component'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,6 +40,8 @@ import {
   MatIconModule,
   MatCardModule
 } from '@angular/material';
+import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
+import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {
     // SettingsComponent,
     StaffhomeComponent,
     AssessmentCardComponent,
-    Navbar
+    AssessmentformComponent,
+    OrganizationformComponent
   ],
   imports: [
     BrowserModule,
