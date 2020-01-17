@@ -44,6 +44,7 @@ import { AssessmentformComponent } from './dashboard/assessmentform/assessmentfo
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
 import { InnovationFormComponent } from './component/innovation-form/innovation-form/innovation-form.component';
 import { InterpersonalCommunicationFormComponent } from './component/interpersonal-communication-form/interpersonal-communication-form.component';
+import { CriticalThinkingFormComponent } from './component/critical-thinking-form/critical-thinking-form.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { InterpersonalCommunicationFormComponent } from './component/interperson
     AssessmentformComponent,
     OrganizationformComponent,
     InnovationFormComponent,
-    InterpersonalCommunicationFormComponent
+    InterpersonalCommunicationFormComponent,
+    CriticalThinkingFormComponent
   ],
   imports: [
     BrowserModule,
