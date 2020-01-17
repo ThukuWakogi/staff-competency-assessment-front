@@ -42,6 +42,7 @@ import {
 } from '@angular/material';
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
+import { InnovationFormComponent } from './component/innovation-form/innovation-form/innovation-form.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { OrganizationformComponent } from './component/organizationform/organiza
     StaffhomeComponent,
     AssessmentCardComponent,
     AssessmentformComponent,
-    OrganizationformComponent
+    OrganizationformComponent,
+    InnovationFormComponent
   ],
   imports: [
     BrowserModule,
