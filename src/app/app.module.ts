@@ -45,6 +45,7 @@ import { OrganizationformComponent } from './component/organizationform/organiza
 import { InnovationFormComponent } from './component/innovation-form/innovation-form/innovation-form.component';
 import { InterpersonalCommunicationFormComponent } from './component/interpersonal-communication-form/interpersonal-communication-form.component';
 import { CriticalThinkingFormComponent } from './component/critical-thinking-form/critical-thinking-form.component';
+import { BuildingAndManagingRelationshipsFormComponent } from './component/building-and-managing-relationships-form/building-and-managing-relationships-form.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { CriticalThinkingFormComponent } from './component/critical-thinking-for
     OrganizationformComponent,
     InnovationFormComponent,
     InterpersonalCommunicationFormComponent,
-    CriticalThinkingFormComponent
+    CriticalThinkingFormComponent,
+    BuildingAndManagingRelationshipsFormComponent
   ],
   imports: [
     BrowserModule,
