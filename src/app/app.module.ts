@@ -43,6 +43,7 @@ import {
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
 import { InnovationFormComponent } from './component/innovation-form/innovation-form/innovation-form.component';
+import { InterpersonalCommunicationFormComponent } from './component/interpersonal-communication-form/interpersonal-communication-form.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { InnovationFormComponent } from './component/innovation-form/innovation-
     AssessmentCardComponent,
     AssessmentformComponent,
     OrganizationformComponent,
-    InnovationFormComponent
+    InnovationFormComponent,
+    InterpersonalCommunicationFormComponent
   ],
   imports: [
     BrowserModule,
