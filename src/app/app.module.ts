@@ -26,6 +26,7 @@ import { CustomMaterialModule } from './material.module';
 import { LoginComponent } from './page/login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { TeamsComponent } from './dashboard/teams/teams.component';
 import { routing } from './app.routes';
 import { FlexLayoutModule } from '@angular/flex-layout'
 import {
@@ -60,6 +61,7 @@ import {
     FooterComponent,
     // SettingsComponent,
     StaffhomeComponent,
+    TeamsComponent,
     AssessmentCardComponent,
     Navbar
   ],

@@ -3,6 +3,7 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
+import { TeamsComponent } from './dashboard/teams/teams.component'
 
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'dashboard', component: RootComponent, children: [
     {path: '', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
-    {path: 'notification', component: NotificationComponent}
+    {path: 'notification', component: NotificationComponent},
+    {path: 'teams', component: TeamsComponent}
   ]}
 ];
 

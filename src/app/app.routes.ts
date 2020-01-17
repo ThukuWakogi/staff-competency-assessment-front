@@ -7,6 +7,7 @@ import { NotificationComponent } from './dashboard/notification/notification.com
 
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
+import { TeamsComponent } from './dashboard/teams/teams.component';
 // import { LockComponent } from './page/lock/lock.component';
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'dashboard', component: RootComponent, children: [
     {path: '', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
-    {path: 'notification', component: NotificationComponent}
+    {path: 'notification', component: NotificationComponent},
+    {path: 'teams', component: TeamsComponent}
     // {path: 'alert', component: SweetalertComponent},
     // {path: 'settings', component: SettingsComponent}
   ]}
