@@ -47,6 +47,11 @@ import { InnovationFormComponent } from './component/innovation-form/innovation-
 import { InterpersonalCommunicationFormComponent } from './component/interpersonal-communication-form/interpersonal-communication-form.component';
 import { CriticalThinkingFormComponent } from './component/critical-thinking-form/critical-thinking-form.component';
 import { BuildingAndManagingRelationshipsFormComponent } from './component/building-and-managing-relationships-form/building-and-managing-relationships-form.component';
+import { SchedulerModule } from '@progress/kendo-angular-scheduler';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.component';
+
+
 
 @NgModule({
   declarations: [
@@ -74,7 +79,8 @@ import { BuildingAndManagingRelationshipsFormComponent } from './component/build
     InnovationFormComponent,
     InterpersonalCommunicationFormComponent,
     CriticalThinkingFormComponent,
-    BuildingAndManagingRelationshipsFormComponent
+    BuildingAndManagingRelationshipsFormComponent,
+    SchedulerComponent
   ],
   imports: [
     BrowserModule,
@@ -94,7 +100,9 @@ import { BuildingAndManagingRelationshipsFormComponent } from './component/build
     MatCardModule,
     MatIconModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SchedulerModule,
+    DateInputsModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]
