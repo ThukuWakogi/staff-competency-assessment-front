@@ -44,13 +44,18 @@ import {
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
 import { InnovationFormComponent } from './component/innovation-form/innovation-form/innovation-form.component';
-import { InterpersonalCommunicationFormComponent } from './component/interpersonal-communication-form/interpersonal-communication-form.component';
+import {
+  InterpersonalCommunicationFormComponent
+} from './component/interpersonal-communication-form/interpersonal-communication-form.component';
 import { CriticalThinkingFormComponent } from './component/critical-thinking-form/critical-thinking-form.component';
-import { BuildingAndManagingRelationshipsFormComponent } from './component/building-and-managing-relationships-form/building-and-managing-relationships-form.component';
+import {
+  BuildingAndManagingRelationshipsFormComponent
+} from './component/building-and-managing-relationships-form/building-and-managing-relationships-form.component';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.component';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HRComponent } from './component/hr/hr.component';
 
 
 @NgModule({
@@ -80,7 +85,8 @@ import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.compon
     InterpersonalCommunicationFormComponent,
     CriticalThinkingFormComponent,
     BuildingAndManagingRelationshipsFormComponent,
-    SchedulerComponent
+    SchedulerComponent,
+    HRComponent
   ],
   imports: [
     BrowserModule,
@@ -102,7 +108,8 @@ import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.compon
     FlexLayoutModule,
     ReactiveFormsModule,
     SchedulerModule,
-    DateInputsModule
+    DateInputsModule,
+    NgbModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent]

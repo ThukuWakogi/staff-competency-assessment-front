@@ -10,6 +10,7 @@ import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 import { StaffhomeComponent } from './pages/staffhome/staffhome.component';
 import { SchedulerComponent } from '@progress/kendo-angular-scheduler';
+import { HRComponent } from './component/hr/hr.component';
 // import { LockComponent } from './page/lock/lock.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
     {path: 'notification', component: NotificationComponent},
     {path: 'assessmentform', component: AssessmentformComponent},
     {path: 'scheduler', component: SchedulerComponent},
+    {path: 'HR', component: HRComponent}
     // {path: 'alert', component: SweetalertComponent},
     // {path: 'settings', component: SettingsComponent}
   ]}

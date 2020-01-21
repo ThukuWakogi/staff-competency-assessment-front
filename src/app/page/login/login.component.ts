@@ -14,12 +14,21 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup
   returnUrl: string
   showPassword = false
+  currentUser: any
 
   constructor(
     private authenticationService: AuthenticationService,
     private router: Router,
     private route: ActivatedRoute,
-    ) { }
+  ) {
+    this
+      .authenticationService
+      .currentUser
+      .subscribe(user => {
+        this.currentUser = user
+        // if (this.authenticationService.currentUserValue != null) this.router.navigate(['dashboard'])
+      })
+  }
 
   ngOnInit() {
     this.loginForm = new FormGroup({

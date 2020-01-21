@@ -15,7 +15,20 @@ export class AppComponent {
     this
       .authenticationService
       .currentUser
-      .subscribe(user => this.currentUser = user)
+      .subscribe(user => {
+        this.currentUser = user
+
+        if (this.authenticationService.currentUserValue == null) this.router.navigate([''])
+        else {
+          if (this.authenticationService.currentUserValue.is_superuser) this.router.navigate(['dashboard/HR'])
+          else {
+            if (this.authenticationService.currentUserValue.is_manager) {
+              console.log('this.authenticationService.currentUserValue.is_manager', this.authenticationService.currentUserValue.is_manager)
+              this.router.navigate(['dashboard'])
+            } else this.router.navigate(['dashboard/profile'])
+          }
+        }
+      })
     this.authenticationService.getLoggedInUser()
   }
 }
