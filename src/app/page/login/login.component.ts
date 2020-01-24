@@ -3,7 +3,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication/authentication.service';
 import { first } from 'rxjs/operators';
 import { Router, ActivatedRoute } from '@angular/router';
-import {MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -15,6 +14,7 @@ export class LoginComponent implements OnInit {
   returnUrl: string
   showPassword = false
   currentUser: any
+  routeBasedOnUser: string
 
   constructor(
     private authenticationService: AuthenticationService,
@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       username: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required])
     })
-    this.returnUrl = this.route.snapshot.queryParams.returnUrl || 'dashboard'
+    this.returnUrl = this.route.snapshot.queryParams.returnUrl || this.routeBasedOnUser
   }
 
   getUsernameErrorMessage() {
@@ -62,8 +62,30 @@ export class LoginComponent implements OnInit {
       .login(this.loginForm.value)
       .pipe(first())
       .subscribe(
-        data => {this.router.navigate([this.returnUrl])},
+        (data: any) => {
+          this.setRouteBasedOnUser()
+          this.router.navigate([this.returnUrl])
+        },
         error => {console.log({error})}
       )
+  }
+
+  setRouteBasedOnUser() {
+    if (this.authenticationService.currentUserValue == null) {
+      this.routeBasedOnUser = ''
+      return
+    }
+
+    if (this.authenticationService.currentUserValue.is_superuser) {
+      this.routeBasedOnUser = 'dashboard/HR'
+      return
+    }
+
+    if (this.authenticationService.currentUserValue.is_manager) {
+      this.routeBasedOnUser = 'dashboard'
+      return
+    }
+
+    this.routeBasedOnUser = 'profile'
   }
 }
