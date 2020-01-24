@@ -1,12 +1,17 @@
 <div class="figure-card card">
-  <div class="card-header" [ngStyle]="{ 'background': linearColor, 'box-shadow': boxShadow }">
-    <i class="material-icons">{{ headerIcon }}</i>
+  <div class="card-header card-header-warning" >
+    <h4 class="card-title">{{ getDisplayName(manager) }}</h4>
   </div>
-  <div class="card-content">
-    <p class="category">{{ category }}</p>
-    <h3 class="title">{{ title }}</h3>
-  </div>
-  <div class="card-footer">
-      <i class="material-icons text-danger">{{ footerIcon }}</i> {{ footContent }}
+  <div class="card-content table-responsive table-full-width">
+    <table class="table">
+      <thead class="text-danger">
+        <th>Name</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let staff of manager.staff">
+          <td>{{ getDisplayName(staff) }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

@@ -6,16 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./figurecard.component.css']
 })
 export class FigurecardComponent implements OnInit {
-  @Input() headerIcon: string;
-  @Input() category: string;
-  @Input() title: string;
-  @Input() footerIcon: string;
-  @Input() footContent: string;
-  @Input() linearColor: string;
-  @Input() boxShadow: string;
+  @Input() manager: any
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  getDisplayName = (user: any) => user.first_name === '' && user.last_name === ''
+    ? user.email
+    : `${user.first_name} ${user.last_name}`.trim()
 }
