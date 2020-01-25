@@ -1,0 +1,35 @@
+<form>
+  <h1 mat-dialog-title>Assessment Period {{ data.assessment }}</h1>
+  <mat-dialog-content>
+    <p>Add the starting and ending period of the assessment</p>
+    <mat-form-field>
+      <input matInput [matDatepicker]="startDatePicker" placeholder="Starting Date"/>
+      <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker
+        #startDatePicker
+        startView="year"
+        [startAt]="pickerStartDate"
+      ></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="endDatePicker" placeholder="Ending Date"/>
+      <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker
+        #endDatePicker
+        startView="year"
+        [startAt]="pickerStartDate"
+      ></mat-datepicker>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close type="button">Cancel</button>
+    <button
+      mat-raised-button
+      class="btn-primary"
+      (click)="save()"
+      type="submit"
+    >
+      Add Assessment Period
+    </button>
+  </mat-dialog-actions>
+</form>

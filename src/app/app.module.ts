@@ -7,9 +7,7 @@ import { FigurecardComponent } from './shared/figurecard/figurecard.component';
 import { ImagecardComponent } from './shared/imagecard/imagecard.component';
 import { NotificationComponent } from './dashboard/notification/notification.component';
 import { MsgIconBtnComponent } from './shared/msgiconbtn/msgiconbtn.component';
-// import { SweetalertComponent } from './dashboard/sweetalert/sweetalert.component';
 import { RootComponent } from './dashboard/root/root.component';
-// import { LockComponent } from './page/lock/lock.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SettingsService } from './services/settings.services';
@@ -39,7 +37,10 @@ import {
   MatSidenavModule,
   MatListModule,
   MatIconModule,
-  MatCardModule
+  MatCardModule,
+  MatDialogModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } from '@angular/material';
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
@@ -56,6 +57,7 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HRComponent } from './component/hr/hr.component';
+import { AssessmentPeriodFormDialogComponent } from './component/assessment-period-form-dialog/assessment-period-form-dialog.component';
 
 
 @NgModule({
@@ -70,12 +72,9 @@ import { HRComponent } from './component/hr/hr.component';
     ImagecardComponent,
     NotificationComponent,
     MsgIconBtnComponent,
-    // SweetalertComponent,
     RootComponent,
-    // LockComponent,
     HeaderComponent,
     FooterComponent,
-    // SettingsComponent,
     StaffhomeComponent,
     TeamsComponent,
     AssessmentCardComponent,
@@ -86,7 +85,8 @@ import { HRComponent } from './component/hr/hr.component';
     CriticalThinkingFormComponent,
     BuildingAndManagingRelationshipsFormComponent,
     SchedulerComponent,
-    HRComponent
+    HRComponent,
+    AssessmentPeriodFormDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -109,9 +109,13 @@ import { HRComponent } from './component/hr/hr.component';
     ReactiveFormsModule,
     SchedulerModule,
     DateInputsModule,
-    NgbModule
+    NgbModule,
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [SettingsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AssessmentPeriodFormDialogComponent]
 })
 export class AppModule { }

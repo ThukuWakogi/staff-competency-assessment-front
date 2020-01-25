@@ -1,0 +1,16 @@
+tr > td:last-child {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  button {
+    margin-left: 16px;
+  }
+}
