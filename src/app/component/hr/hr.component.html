@@ -1,5 +1,66 @@
 <div class="container">
   <app-navbar title="HR"></app-navbar>
-  <p>hr works!</p>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header card-header-primary">
+          <h4 class="card-title">Assessment periods</h4>
+        </div>
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>Total number of assessment periods</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>Last assessment</td>
+                <td>From here to here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer card-actions">
+          <button mat-stroked-button (click)="openDialog()" >Add assessment</button>
+          <button mat-raised-button class="btn-primary">View all</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header card-header-primary">
+          <h4 class="card-title">Users</h4>
+        </div>
+        <div class="card-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>Total number of users</td>
+                <td>132</td>
+              </tr>
+              <tr>
+                <td>Champions</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>Experts</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>Practitioners</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>Beginners</td>
+                <td>64</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer card-actions">
+          <button mat-raised-button class="btn-primary">View users</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
