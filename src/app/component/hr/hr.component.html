@@ -11,17 +11,17 @@
             <tbody>
               <tr>
                 <td>Total number of assessment periods</td>
-                <td>35</td>
+                <td>{{ assessmentPeriodSummary.total_assessment_periods }}</td>
               </tr>
               <tr>
                 <td>Last assessment</td>
-                <td>From here to here</td>
+                <td>{{ getLastAssessmentPeriodEndingDate() }}</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="card-footer card-actions">
-          <button mat-stroked-button (click)="openDialog()" >Add assessment</button>
+          <button mat-stroked-button (click)="openDialog()">Add assessment</button>
           <button mat-raised-button class="btn-primary">View all</button>
         </div>
       </div>
