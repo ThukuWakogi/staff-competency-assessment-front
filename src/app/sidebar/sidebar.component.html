@@ -7,6 +7,21 @@
   <div class="nav-container">
     <ul class="nav">
       <li
+        *ngIf="isAssessmentPending"
+        routerLinkActive
+        #rla="routerLinkActive"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a
+          [routerLink]="['assessmentform']"
+          [style.background-color]="rla.isActive ? color : 'transparent'"
+          [style.color]="rla.isActive ? pendingAssessmentActiveColor : pendingAssessmentInactiveColor"
+        >
+          <i class="material-icons">edit</i>
+          <span style="font-weight: 500;">Pending Assessment!</span>
+        </a>
+      </li>
+      <li
         *ngFor="let menuItem of menuItems"
         routerLinkActive
         #rla="routerLinkActive"
