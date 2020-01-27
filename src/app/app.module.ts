@@ -40,7 +40,8 @@ import {
   MatCardModule,
   MatDialogModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatExpansionModule,
 } from '@angular/material';
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
@@ -58,6 +59,7 @@ import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.compon
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HRComponent } from './component/hr/hr.component';
 import { AssessmentPeriodFormDialogComponent } from './component/assessment-period-form-dialog/assessment-period-form-dialog.component';
+import { AssessmentPeriodComponent } from './dashboard/assessment-period/assessment-period.component';
 
 
 @NgModule({
@@ -86,7 +88,8 @@ import { AssessmentPeriodFormDialogComponent } from './component/assessment-peri
     BuildingAndManagingRelationshipsFormComponent,
     SchedulerComponent,
     HRComponent,
-    AssessmentPeriodFormDialogComponent
+    AssessmentPeriodFormDialogComponent,
+    AssessmentPeriodComponent
   ],
   imports: [
     BrowserModule,
@@ -112,7 +115,8 @@ import { AssessmentPeriodFormDialogComponent } from './component/assessment-peri
     NgbModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatExpansionModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent],

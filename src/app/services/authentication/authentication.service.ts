@@ -57,7 +57,7 @@ export class AuthenticationService {
   }
 
   logout() {
-    localStorage.removeItem('hnrs_token')
+    localStorage.removeItem(this.localStorageName)
     this.currentUserSubject.next(null)
   }
 }

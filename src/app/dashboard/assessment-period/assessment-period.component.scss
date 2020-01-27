@@ -1,0 +1,8 @@
+.add-assessment-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  & > button {
+    margin: 12px 0px;
+  }
+}
