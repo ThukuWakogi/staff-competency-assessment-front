@@ -10,4 +10,6 @@ export class AssessmentPeriodService {
   constructor(private http: HttpClient) { }
 
   getAssessmentPeriodSummary() {return this.http.get<any>(`${environment.apiUrl}/assessment-periods/summary/`)}
+
+  getAssessementPeriods() {return this.http.get<any[]>(`${environment.apiUrl}/assessment-periods/`)}
 }

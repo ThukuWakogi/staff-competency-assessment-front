@@ -11,6 +11,7 @@ export const ROUTES = [
     { path: 'assessmentform', title: 'Assessment', icon: 'edit', children: null },
     { path: 'scheduler', title: 'Scheduler', icon: 'person', children: null },
     { path: 'HR', title: 'HR', icon: 'person', children: null },
+    { path: 'assessment-period', title: 'Assessment Period', icon: 'date_range', children: null }
     // { path: 'teams', title: 'Teams', icon: 'person', children: null },
     // { path: 'alert', title: 'Sweet Alert', icon: 'warning', children: null },
     // { path: 'settings', title: 'Settings', icon: 'settings', children: null },
