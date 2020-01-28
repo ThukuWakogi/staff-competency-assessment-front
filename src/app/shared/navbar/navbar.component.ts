@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  public person(){
+  public person() {
     this.router.navigate(['./dashboard/profile']);
   }
 
