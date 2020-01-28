@@ -5,7 +5,6 @@ import 'hammerjs';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FigurecardComponent } from './shared/figurecard/figurecard.component';
 import { ImagecardComponent } from './shared/imagecard/imagecard.component';
-import { NotificationComponent } from './dashboard/notification/notification.component';
 import { MsgIconBtnComponent } from './shared/msgiconbtn/msgiconbtn.component';
 import { RootComponent } from './dashboard/root/root.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -23,7 +22,6 @@ import { CustomMaterialModule } from './material.module';
 import { LoginComponent } from './page/login/login.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
-import { TeamsComponent } from './dashboard/teams/teams.component';
 import { routing } from './app.routes';
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { ReactiveFormsModule } from '@angular/forms'
@@ -53,9 +51,7 @@ import { CriticalThinkingFormComponent } from './component/critical-thinking-for
 import {
   BuildingAndManagingRelationshipsFormComponent
 } from './component/building-and-managing-relationships-form/building-and-managing-relationships-form.component';
-import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
-import { SchedulerComponent } from 'src/app/dashboard/scheduler/scheduler.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HRComponent } from './component/hr/hr.component';
 import { AssessmentPeriodFormDialogComponent } from './component/assessment-period-form-dialog/assessment-period-form-dialog.component';
@@ -72,13 +68,11 @@ import { AssessmentPeriodComponent } from './dashboard/assessment-period/assessm
     NavbarComponent,
     FigurecardComponent,
     ImagecardComponent,
-    NotificationComponent,
     MsgIconBtnComponent,
     RootComponent,
     HeaderComponent,
     FooterComponent,
     StaffhomeComponent,
-    TeamsComponent,
     AssessmentCardComponent,
     AssessmentformComponent,
     OrganizationformComponent,
@@ -86,7 +80,6 @@ import { AssessmentPeriodComponent } from './dashboard/assessment-period/assessm
     InterpersonalCommunicationFormComponent,
     CriticalThinkingFormComponent,
     BuildingAndManagingRelationshipsFormComponent,
-    SchedulerComponent,
     HRComponent,
     AssessmentPeriodFormDialogComponent,
     AssessmentPeriodComponent
@@ -110,7 +103,6 @@ import { AssessmentPeriodComponent } from './dashboard/assessment-period/assessm
     MatIconModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    SchedulerModule,
     DateInputsModule,
     NgbModule,
     MatDialogModule,
