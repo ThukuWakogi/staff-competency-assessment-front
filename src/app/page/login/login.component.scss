@@ -1,9 +1,10 @@
-.container{
+.container {
     height: 100%;
     position: relative;
     z-index: 1;
-  }
-  .background{
+}
+
+.background {
     background: url("../../../assets/img/login_bg.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,9 +12,9 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-  }
+}
 
-  .card{
+.card {
     position: relative;
     padding: 20px;
     display: flex;
@@ -31,82 +32,91 @@
     -moz-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  }
+}
 
-  @-webkit-keyframes card {
-    from {top: -40px;}
-    to {top: 40px;}
-  }
+@-webkit-keyframes card {
+    from {
+        top: -40px;
+    }
+    to {
+        top: 40px;
+    }
+}
 
-  @keyframes card {
-    from {top: -40px;}
-    to {top: 40px;}
-  }
+@keyframes card {
+    from {
+        top: -40px;
+    }
+    to {
+        top: 40px;
+    }
+}
 
-  .card-header{
+.card-header {
     position: relative;
     overflow: hidden;
     top: -40px;
     width: 100%;
     padding: 25px;
     border-radius: 3px;
-    background: linear-gradient(60deg, #ec407a, #d81b60);
+    background: linear-gradient(60deg, #637c33, #637c33);
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .card-header h4{
+.card-header h4 {
     font-weight: 400;
     color: #fff;
     margin-bottom: 25px;
     margin-top: 5px;
-  }
+}
 
-  .social-btns i{
+.social-btns i {
     font-size: 21px;
     color: #fff;
-  }
+}
 
-  .social-btns button{
+.social-btns button {
     margin: 0 8px;
-  }
+}
 
-  .tip{
+.tip {
     margin-top: -20px;
-  }
+}
 
-  .form-row, .card-form, .mat-form-field{
+.form-row,
+.card-form,
+.mat-form-field {
     width: 100%;
-  }
+}
 
-  .card-form{
+.card-form {
     padding: 5px;
-  }
+}
 
-  .form-row {
+.form-row {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 13px;
     justify-content: center;
-    & > button {
-      color: #e91e63;
+    &>button {
+        color: #637c33;
     }
-    & > i {
-      margin-top: 6px;
+    &>i {
+        margin-top: 6px;
     }
-  }
+}
 
-  .form-row i{
+.form-row i {
     position: relative;
     top: -5px;
     margin-right: 15px;
     color: #555;
-  }
+}
 
-  .card-footer{
+.card-footer {
     margin: 10px;
-  }
-
+}
