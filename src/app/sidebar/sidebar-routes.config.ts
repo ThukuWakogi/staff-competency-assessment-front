@@ -7,9 +7,7 @@ export const ROUTES = [
     //     {path: 'components/panels', title: 'Panels', icon: 'P'},
     //     {path: 'components/wizard', title: 'Wizard', icon: 'W'},
     //   ]},
-    { path: 'notification', title: 'Notification', icon: 'notifications', children: null },
     { path: 'assessmentform', title: 'Assessment', icon: 'edit', children: null },
-    { path: 'scheduler', title: 'Scheduler', icon: 'person', children: null },
     { path: 'HR', title: 'HR', icon: 'person', children: null },
     { path: 'assessment-period', title: 'Assessment Period', icon: 'date_range', children: null }
     // { path: 'teams', title: 'Teams', icon: 'person', children: null },
