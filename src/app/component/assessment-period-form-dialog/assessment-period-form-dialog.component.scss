@@ -1,5 +1,5 @@
 mat-form-field {
-  width: 100%
+  width: 100%;
 }
 
 form > h1 {
@@ -8,4 +8,10 @@ form > h1 {
 
 p {
   margin-bottom: 12px;
+}
+
+.assessment-ongoing {
+  margin: 16px 0px;
+  text-align: center;
+  max-width: 400px;
 }

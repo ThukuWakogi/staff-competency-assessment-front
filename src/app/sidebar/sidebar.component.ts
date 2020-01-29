@@ -21,12 +21,7 @@ export class SidebarComponent implements OnInit, AfterViewInit, OnDestroy {
   public isAssessmentPending = true
   currentUser: any;
 
-  constructor(
-    public settingsService: SettingsService,
-    private authenticationService: AuthenticationService,
-    private router: Router,
-    private assessmentsService: AssessmentsService,
-  ) {
+  constructor(public settingsService: SettingsService, private assessmentsService: AssessmentsService) {
     this.menuItems = ROUTES;
     this.activeFontColor = 'rgba(0,0,0,.6)';
     this.normalFontColor = 'rgba(255,255,255,.8)';
