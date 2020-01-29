@@ -1,5 +1,5 @@
-<div class="form-competency">
-  <div class="form-strand">
+<div class="form-competency" [formGroup]="assessmentForm">
+  <div class="form-strand" formGroupName="criticalThinking">
     <div class="form-strand-div">
       <h4 class="card-title strand-title">Data Compilation</h4>
     </div>
@@ -8,10 +8,11 @@
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="dataCompilation"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at compiling data effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Compiles data effectively and consistently</p>
@@ -19,14 +20,14 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to compile data</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="dataCompilationComment">
     </mat-form-field>
   </div>
-  <div class="form-strand">
+  <div class="form-strand" formGroupName="criticalThinking">
     <div class="form-strand-div">
       <h4 class="card-title strand-title">Data Analysis</h4>
     </div>
@@ -35,10 +36,11 @@
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="dataAnalysis"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at analyzing data effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Analyzes data effectively and consistently</p>
@@ -46,14 +48,14 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to analyze data</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="dataAnalysisComment">
     </mat-form-field>
   </div>
-  <div class="form-strand">
+  <div class="form-strand" formGroupName="criticalThinking">
     <div class="form-strand-div">
       <h4 class="card-title strand-title">Problem Solving</h4>
     </div>
@@ -62,10 +64,11 @@
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="problemSolving"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at identifying the most strategic options effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Identifies the most strategic options effectively and consistently</p>
@@ -73,26 +76,27 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to identify the most strategic options</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="problemSolvingComment">
     </mat-form-field>
   </div>
-  <div class="form-strand">
+  <div class="form-strand" formGroupName="criticalThinking">
     <div class="form-strand-div">
-      <h4 class="card-title strand-title">Continual Imporvement</h4>
+      <h4 class="card-title strand-title">Continual Improvement</h4>
     </div>
     <mat-radio-group
       fxLayout.gt-xs="row"
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="continualImprovement"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at reflecting on lessons learned from successes and failures effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Reflects on lessons learned from successes and failures effectively and consistently</p>
@@ -100,11 +104,11 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to reflect on lessons learned from successes and failures</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="continualImprovementComment">
     </mat-form-field>
   </div>
 </div>

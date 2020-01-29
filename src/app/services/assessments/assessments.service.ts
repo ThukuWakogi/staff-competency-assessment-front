@@ -24,7 +24,10 @@ export class AssessmentsService {
       })
   }
 
-  public getPendingAssessmentStatusValue() {return this.PendingAssessmentStatusSubject.value}
+  public getPendingAssessmentStatusValue(): any {
+    console.log(this.PendingAssessmentStatusSubject.value)
+    return this.PendingAssessmentStatusSubject.value
+  }
 
   public isAssessmentPending(userId: number) {
     console.log({userId})
@@ -32,9 +35,11 @@ export class AssessmentsService {
       .http
       .get<any>(`${environment.apiUrl}/assessments/pending/${userId}/`)
       .pipe(first())
-      .subscribe(data => {
-        console.log({data})
-        this.PendingAssessmentStatusSubject.next(data)
+      .subscribe(assessmentStatus => {
+        console.log({assessmentStatus})
+        this.PendingAssessmentStatusSubject.next(assessmentStatus)
       })
   }
+
+  public postAssessment(assessment: any) {return this.http.post(`${environment.apiUrl}/assessments/`, assessment)}
 }

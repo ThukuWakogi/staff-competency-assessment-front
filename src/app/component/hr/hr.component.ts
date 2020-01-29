@@ -4,6 +4,7 @@ import { AssessmentPeriodFormDialogComponent } from '../assessment-period-form-d
 import { AssessmentPeriodService } from 'src/app/services/assessment-period/assessment-period.service';
 import { first } from 'rxjs/operators';
 import format from 'date-fns/format'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hr',
@@ -13,7 +14,7 @@ import format from 'date-fns/format'
 export class HRComponent implements OnInit {
   assessmentPeriodSummary: any
 
-  constructor(public dialog: MatDialog, private assessmentPeriodService: AssessmentPeriodService) { }
+  constructor(public dialog: MatDialog, private assessmentPeriodService: AssessmentPeriodService, public router: Router) { }
 
   ngOnInit() {
     this.getAssessmentPeriodSummary()
@@ -41,4 +42,6 @@ export class HRComponent implements OnInit {
         format(new Date(this.assessmentPeriodSummary.previous_assessment_period.end_date), 'do MMMM, yyyy')
       }`
   }
+
+  navigateTo(path: string) {this.router.navigate([path])}
 }

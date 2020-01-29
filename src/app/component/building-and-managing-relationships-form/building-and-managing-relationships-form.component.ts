@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-building-and-managing-relationships-form',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./building-and-managing-relationships-form.component.scss']
 })
 export class BuildingAndManagingRelationshipsFormComponent implements OnInit {
+  @Input() assessmentForm: FormGroup
 
   constructor() { }
 
