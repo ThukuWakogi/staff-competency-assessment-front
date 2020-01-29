@@ -54,7 +54,7 @@ export class SidebarComponent implements OnInit, AfterViewInit, OnDestroy {
       .PendingAssessmentStatus
       .subscribe(assessStatus => {
         if (assessStatus) {
-          console.log(assessStatus.is_assessment_done)
+          console.log(assessStatus)
           this.isAssessmentPending = assessStatus.is_assessment_done
         }
       })

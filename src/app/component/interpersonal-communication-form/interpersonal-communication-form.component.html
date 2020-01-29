@@ -1,5 +1,5 @@
-<div class="form-competency">
-  <div class="form-strand">
+<div class="form-competency" [formGroup]="assessmentForm">
+  <div class="form-strand" formGroupName="interpersonalCommunication">
     <div class="form-strand-div">
       <h4 class="card-title strand-title">Investment Building</h4>
     </div>
@@ -8,10 +8,11 @@
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="investmentBuilding"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at gaining buy in from others effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Gains buy in from others effectively and consistently</p>
@@ -19,26 +20,27 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to gain the buy in from others</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="investmentBuildingComment">
     </mat-form-field>
   </div>
-  <div class="form-strand">
+  <div class="form-strand" formGroupName="interpersonalCommunication">
     <div class="form-strand-div">
-      <h4 class="card-title strand-title">Effective Communication      </h4>
+      <h4 class="card-title strand-title">Effective Communication</h4>
     </div>
     <mat-radio-group
       fxLayout.gt-xs="row"
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="effectiveCommunication"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at developing content effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Develops content effectively and consistently</p>
@@ -46,14 +48,14 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to develop content</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="effectiveCommunicationComment">
     </mat-form-field>
   </div>
-  <div class="form-strand">
+  <div class="form-strand" formGroupName="interpersonalCommunication">
     <div class="form-strand-div">
       <h4 class="card-title strand-title">Delivering the Message (Method + Structure)</h4>
     </div>
@@ -62,10 +64,11 @@
       fxLayout.lt-xs="column"
       fxLayoutGap="8px"
       class="form-ratings"
+      formControlName="deliveringTheMessage"
     >
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Excels at delivering a clear message effectively and consistently</p>
-        <mat-radio-button value="3">Exemplary</mat-radio-button>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Delivers a clear message effectively and consistently</p>
@@ -73,11 +76,11 @@
       </div>
       <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
         <p>Struggles to deliver a clear message</p>
-        <mat-radio-button value="1">Foundation</mat-radio-button>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
       </div>
     </mat-radio-group>
     <mat-form-field>
-      <input matInput placeholder="comment" >
+      <input matInput placeholder="comment" formControlName="deliveringTheMessageComment">
     </mat-form-field>
   </div>
 </div>

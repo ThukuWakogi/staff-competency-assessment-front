@@ -14,6 +14,7 @@
       >
         <a
           [routerLink]="['assessmentform']"
+          [queryParams]="{ assessing: 'staff' }"
           [style.background-color]="rla.isActive ? color : 'transparent'"
           [style.color]="rla.isActive ? pendingAssessmentActiveColor : pendingAssessmentInactiveColor"
         >
