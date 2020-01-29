@@ -40,6 +40,7 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatExpansionModule,
+  MatSlideToggleModule,
 } from '@angular/material';
 import { AssessmentformComponent } from './dashboard/assessmentform/assessmentform.component';
 import { OrganizationformComponent } from './component/organizationform/organizationform/organizationform.component';
@@ -108,7 +109,8 @@ import { AssessmentPeriodComponent } from './dashboard/assessment-period/assessm
     MatDialogModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSlideToggleModule
   ],
   providers: [SettingsService],
   bootstrap: [AppComponent],

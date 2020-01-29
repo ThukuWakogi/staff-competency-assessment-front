@@ -1,15 +1,26 @@
 <div class="container">
   <app-navbar title="Assessment Periods"></app-navbar>
   <div class="add-assessment-div">
-    <button mat-raised-button class="btn-primary">View all</button>
+    <button mat-raised-button class="btn-primary" (click)="openDialog()">
+      Add Assessment
+    </button>
   </div>
   <mat-accordion>
-    <mat-expansion-panel *ngFor="let assessmentPeriod of assessmentPeriods">
+    <mat-expansion-panel *ngFor="let assessmentPeriod of assessmentPeriods;">
       <mat-expansion-panel-header>
         <mat-panel-title>Assessment period #{{ assessmentPeriod.id }}</mat-panel-title>
+        <mat-panel-description *ngIf="isAssessmentOngoing(assessmentPeriod.id)">Ongoing</mat-panel-description>
       </mat-expansion-panel-header>
-      <p>Running from {{ assessmentPeriod.start_date|date }} to {{ assessmentPeriod.end_date|date }}</p>
-      <p>summary is coming soon...</p>
+      <div class="ongoing-boolean">
+        <p>Running from {{ assessmentPeriod.start_date | date }} to {{ assessmentPeriod.end_date | date }}</p>
+        <mat-slide-toggle
+          *ngIf="isAssessmentOngoing(assessmentPeriod.id) || isAssessmentPeriodInRange(assessmentPeriod.start_date, assessmentPeriod.end_date)"
+          [checked]="assessmentPeriod.is_marked_as_ended"
+          (toggleChange)="onChange(assessmentPeriod)"
+          [disabled]="isAssessmentPeriodUpdating"
+        >{{ assessmentPeriod.is_marked_as_ended ? 'Complete': 'Ongoing' }}</mat-slide-toggle>
+      </div>
+      <p>summary is coming soon...</p> {{ isAssessmentPeriodInRange(assessmentPeriod.start_date, assessmentPeriod.end_date) }}
     </mat-expansion-panel>
   </mat-accordion>
 </div>

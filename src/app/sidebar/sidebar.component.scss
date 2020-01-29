@@ -5,14 +5,11 @@
     text-align: center;
     position: relative;
   }
-  
+
   .logo img{
-    width: 42px;
-    position: absolute;
-    top: 16px;
-    left: 13px;
+    width: 100px;
   }
-  
+
   .divider{
     content: '';
     position: relative;
@@ -21,7 +18,7 @@
     width: calc(100% - 30px);
     background-color: rgba(255, 255, 255, 0.5);
   }
-  
+
   .sidebar-wrapper{
     overflow-y: auto;
     padding-bottom: 30px;
@@ -29,19 +26,19 @@
     position: relative;
     height: 100%;
   }
-  
+
   .nav-container{
     position: relative;
   }
-  
+
   .nav{
     padding-top: 15px;
   }
-  
+
   .nav li{
     margin-bottom: 9px;
   }
-  
+
   .nav li a{
     display: flex;
     align-items: center;
@@ -56,15 +53,15 @@
     height: 50px;
     text-decoration: none;
   }
-  
+
   .nav li a:hover, .parent-active{
     background-color: rgba(255,255,255,.1);
   }
-  
+
   .nav li a span{
     margin-left: 20px;
   }
-  
+
   .active a, .active a:hover{
     /*color: rgba(0,0,0,.6) !important;*/
     /*background-color: #fff !important;*/
@@ -75,11 +72,11 @@
     -o-transition: all 400ms;
     transition: all 400ms;
   }
-  
+
   .collapse-a{
     position: relative;
   }
-  
+
   .collapse-a .caret{
     position: absolute;
     right: 21px;
@@ -96,7 +93,7 @@
     -o-transition: all 200ms;
     transition: all 200ms;
   }
-  
+
   .collapsed .caret{
     position: absolute;
     right: 21px;

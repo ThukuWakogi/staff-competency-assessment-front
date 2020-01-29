@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-critical-thinking-form',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./critical-thinking-form.component.scss']
 })
 export class CriticalThinkingFormComponent implements OnInit {
+  @Input() assessmentForm: FormGroup
 
   constructor() { }
 
