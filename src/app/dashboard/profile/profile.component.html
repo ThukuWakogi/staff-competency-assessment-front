@@ -1,0 +1,116 @@
+<div class="container">
+    <app-navbar title="User Profile"></app-navbar>
+    <div class="row" style="margin-top: 30px">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <i class="material-icons">perm_identity</i>
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">
+                        Assessment #36
+                        <small class="category">During Assessment period #8</small>
+                    </h4>
+                    <!-- <form>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-form-field color="accent">
+                  <input
+                    matInput
+                    type="text"
+                    placeholder="First Name"
+                    [(ngModel)]="firstName"
+                    value="Ci"
+                    name="firstName"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="col-md-6">
+                <mat-form-field color="accent">
+                  <input
+                    matInput
+                    type="text"
+                    placeholder="Last Name"
+                    [(ngModel)]="lastName"
+                    value="Clia"
+                    name="lastName"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Address" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="City" />
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Country" />
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Postcode" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="textarea-label">About Me</label>
+                <mat-form-field color="accent">
+                  <textarea matInput placeholder=" "></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row action-btn">
+              <button md-raised-button type="submit" class="btn btn-rose">
+                UPDATE PROFILE
+              </button>
+            </div>
+          </form> -->
+                    <div class="accordion-div">
+                        <mat-accordion>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>Results from you</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>You results come here</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>Results from Martin Smith</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>Results from Martin Smith come here</p>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel>
+                                <mat-expansion-panel-header>
+                                    <mat-panel-title>Results from Martin Smith</mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <p>Second results from Martin Smith come here</p>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card right-profile">
+                <div class="profile">
+                    <img src="../../../assets/img/marc.jpg" alt="profile" />
+                </div>
+                <h6>
+                    <!-- CEO / CO-FOUNDER -->
+                </h6>
+                <h4>{{ firstName }} {{ lastName }}</h4>
+            </div>
+        </div>
+    </div>
+</div>

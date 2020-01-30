@@ -1,0 +1,86 @@
+<div class="form-competency" [formGroup]="assessmentForm">
+  <div class="form-strand" formGroupName="buildingAndManagingRelationships">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Teamwork</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="teamwork"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at collaborating effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Collaborates effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to collaborate</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="teamworkComment">
+    </mat-form-field>
+  </div>
+  <div class="form-strand" formGroupName="buildingAndManagingRelationships">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Stakeholder Management</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="stakeholderManagement"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at managing stakeholders effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Manages stakeholders effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to manage stakeholders</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="stakeholderManagementComment">
+    </mat-form-field>
+  </div>
+  <div class="form-strand" formGroupName="buildingAndManagingRelationships">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Conflict Management</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="conflictManagement"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at moving situations of conflict toward resolution effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Moves situations of conflict toward resolution effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to prioritize effectively and consistently</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="conflictManagementComment">
+    </mat-form-field>
+  </div>
+</div>

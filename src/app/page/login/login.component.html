@@ -1,0 +1,57 @@
+<div class="background"></div>
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <app-header></app-header>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+        <div class="card">
+          <div class="card-header">
+            <h4>Login</h4>
+            <div class="social-btns">
+            </div>
+          </div>
+          <p class="tip">Type in your email and password</p>
+          <form class="card-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-row">
+              <i class="material-icons">email</i>
+              <mat-form-field color="accent">
+                <input
+                  type="text"
+                  matInput
+                  placeholder="Email address"
+                  formControlName="username"
+                />
+                <mat-error *ngIf="loginForm.controls.username.invalid">{{ getUsernameErrorMessage() }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <i class="material-icons">lock_outline</i>
+              <mat-form-field color="accent">
+                <input
+                  [type]="showPassword ? 'text' : 'password'"
+                  matInput
+                  placeholder="Password"
+                  formControlName="password"
+                />
+                <button
+                  mat-icon-button
+                  matSuffix
+                  type="button"
+                  (click)="showPassword = !showPassword"
+                >
+                  <mat-icon>{{ showPassword ? 'visibility_on' : 'visibility_off' }}</mat-icon>
+                </button>
+                <mat-error *ngIf="loginForm.controls.username.invalid">{{ getPasswordErrorMessage() }}</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="form-row">
+              <button mat-raised-button color="#e91e63" type="submit">LOGIN</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

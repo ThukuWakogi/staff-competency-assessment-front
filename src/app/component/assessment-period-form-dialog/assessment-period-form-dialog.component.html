@@ -1,0 +1,45 @@
+<form>
+  <h1 mat-dialog-title *ngIf="!isAssessmentPeriodOngoing">Assessment Period</h1>
+  <mat-dialog-content *ngIf="!isAssessmentPeriodOngoing" [formGroup]="assessmentPeriodForm">
+    <p *ngIf="!customErrorExists">Add the starting and ending period of the assessment</p>
+    <p *ngIf="customErrorExists" style="color: red;">{{ errorMessage }}</p>
+    <mat-form-field>
+      <input matInput [matDatepicker]="startDatePicker" placeholder="Starting Date" formControlName="start_date"/>
+      <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker
+        #startDatePicker
+        startView="year"
+        [startAt]="pickerStartDate"
+      ></mat-datepicker>
+      <mat-error *ngIf="assessmentPeriodForm.controls.start_date.invalid">{{ getStartDateError() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="endDatePicker" placeholder="Ending Date" formControlName="end_date"/>
+      <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker
+        #endDatePicker
+        startView="year"
+        [startAt]="pickerStartDate"
+      ></mat-datepicker>
+      <mat-error *ngIf="assessmentPeriodForm.controls.end_date.invalid">{{ getEndDateError() }}</mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-content *ngIf="isAssessmentPeriodOngoing">
+    <div class="assessment-ongoing">
+      <h5>Assessment period #{{ assessmentStatus.ongoing_assessment_period.id }} is ongoing till {{ assessmentStatus.ongoing_assessment_period.end_date|date }}</h5>
+      <p>Edit the assessment period to show its completes or awaiting its ending to add another</p>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close type="button">Cancel</button>
+    <button
+      mat-raised-button
+      class="btn-primary"
+      (click)="save()"
+      type="submit"
+      *ngIf="!isAssessmentPeriodOngoing"
+    >
+      Add Assessment Period
+    </button>
+  </mat-dialog-actions>
+</form>

@@ -1,0 +1,17 @@
+.add-assessment-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  & > button {
+    margin: 12px 0px;
+  }
+}
+
+p {
+  color: #000;
+}
+
+.ongoing-boolean {
+  display: flex;
+  justify-content: space-between;
+}

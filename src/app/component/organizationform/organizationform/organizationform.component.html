@@ -1,0 +1,86 @@
+<div class="form-competency" [formGroup]="assessmentForm">
+  <div class="form-strand" formGroupName="organisation">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Planning</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="planning"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at planning effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Plans effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to plan effectively and consistently</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="planningComment">
+    </mat-form-field>
+  </div>
+  <div class="form-strand" formGroupName="organisation">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Execution</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="execution"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at executing effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Executes effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to execute effectively and consistently</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="executionComment">
+    </mat-form-field>
+  </div>
+  <div class="form-strand" formGroupName="organisation">
+    <div class="form-strand-div">
+      <h4 class="card-title strand-title">Prioritization</h4>
+    </div>
+    <mat-radio-group
+      fxLayout.gt-xs="row"
+      fxLayout.lt-xs="column"
+      fxLayoutGap="8px"
+      class="form-ratings"
+      formControlName="prioritization"
+    >
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Excels at prioritization effectively and consistently</p>
+        <mat-radio-button value="1">Exemplary</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Prioritizes effectively and consistently</p>
+        <mat-radio-button value="2">Proficient</mat-radio-button>
+      </div>
+      <div fxFlex.gt-xs="30%" fxFlex.gt-xs="100%">
+        <p>Struggles to prioritize effectively and consistently</p>
+        <mat-radio-button value="3">Foundation</mat-radio-button>
+      </div>
+    </mat-radio-group>
+    <mat-form-field>
+      <input matInput placeholder="comment" formControlName="prioritizationComment">
+    </mat-form-field>
+  </div>
+</div>
